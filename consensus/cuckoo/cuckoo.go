@@ -104,7 +104,7 @@ type Cuckoo struct {
 }
 
 func New(config Config) *Cuckoo {
-	C.CuckooInit()
+	C.CuckooInit(1)
 
 	cuckoo := &Cuckoo{
 		config:       config,
